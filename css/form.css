@@ -1,0 +1,39 @@
+form {
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.campos {
+    width: 200px;
+    height: 20px;
+    border: 2px chocolate solid;
+    border-radius: 5px;
+}
+
+::placeholder {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.botoes {
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 2px chocolate solid;
+    margin-top: 20px;
+    margin-left: 4px;
+    width: 80px;
+    height: 20px;
+    border-radius: 10px;
+}
+.botoes:hover {
+    cursor: pointer;
+}
+
+.salvar, .cancelar{
+    color: white;
+    background: black;
+    border: 1px solid chocolate;
+}
+

@@ -1,0 +1,31 @@
+#funcionarios, #teste {
+    width: 80%;
+    margin: auto;
+    border: 2px chocolate solid;
+    border-collapse: collapse;
+    text-align: left;
+    color: black;
+}
+#funcionarios thead, #teste thead {
+    background: burlywood;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#teste thead {
+    background-color: rgba(218, 164, 28, 0.759);
+    color: white;
+}
+#teste {
+    margin-top: 15px;
+}
+#funcionarios thead tr th, #teste thead tr th {
+    padding: 4px 10px;
+}
+
+#funcionarios tbody tr td, #teste tbody tr td {
+    padding: 8px 10px;
+    border: 1px solid chocolate;
+}
+#funcionarios tbody tr:hover, #teste tbody tr:hover {
+    background-color: rgba(0, 255, 157, 0.213);
+}
