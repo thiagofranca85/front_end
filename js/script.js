@@ -20,39 +20,42 @@ function limpar(event) {
   console.log("Limpando....");
 }
 
-function salvar(event) {
+function limpar(event){
   event.preventDefault();
-  console.log("salvando....");
+  document.querySelector('form').reset();
+  console.log('Limpando....');
+}
 
-  var name = document.getElementsByName("nome_completo")[0].value;
-  var ocupation = document.getElementsByName("cargo")[0].value;
-  var sal = document.getElementsByName("salario")[0].value;
+function salvar(event){
+  event.preventDefault();
+  console.log('salvando....');
+  
+  var name = document.getElementsByName('nome_completo')[0].value;
+  var cargo = document.getElementsByName('cargo')[0].value;
+  var salario = document.getElementsByName('salario')[0].value;
 
   var listaFunc = JSON.parse(localStorage.getItem('Funcionarios'));
 
   if(listaFunc == null){
-      listaFunc = []
+      listaFunc = [];
   }
-
-  var id = JSON.parse(localStorage.getItem('idFuncionario'));
-
+  var id = JSON.parse(localStorage.getItem('IdFuncionario'));
   if(listaFunc == null){
-    id = 0;
+      id = 0;
   }
   id = id +1;
 
   var Func = {
-    'id': id,
-    'nome_completo': name,
-   ' cargo': ocupation,
-   ' salario': sal,
-  }; listaFunc.push()
-  console.log(Func);
+                  'id': id,
+                  'nome_completo': name,
+                  'cargo': cargo,
+                  'salario': salario
+      };listaFunc.push(Func);
 
-  localStorage.setItem('idFuncionarios', JSON.stringify(id));
+  
+  localStorage.setItem('IdFuncionario', JSON.stringify(id));    
   localStorage.setItem('Funcionarios', JSON.stringify(listaFunc));
   limpar(event)
-
 }
 
-document.getElementById("salvar").addEventListener("click", salvar);
+document.getElementById('salvar').addEventListener('click', salvar)
