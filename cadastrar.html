@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/form.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>+Devs2Blu</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo">
-            </a>
-        </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="listar.html">Listar</a></li>
-            <li><a href="editar.html">Editar</a></li>
-        </ul>
-    </header>        
+      <div id="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="listar.html">Listar</a></li>
+        <li><a href="editar.html">Editar</a></li>
+      </ul>
+    </header>
     <main>
-        <h1>Cadastro de Funcionários</h1>
-        <form action="">
-            <div>
-                <input type="text" class="campos" id="nome_completo" placeholder="Nome Completo">
-            </div>
-            <br>
-            <div>
-                <input type="text" class="campos" id="cargo" placeholder="Cargo">
-            </div>
-            <br>
-            <div>
-                <input type="text" class="campos" id="salario" placeholder="Salário">
-            </div>
-            <br>
-            <div>
-                <input type="submit" class="botoes salvar" value="Salvar">
-                <button class="botoes cancelar">Limpar</button>
-            </div>
-        </form>
+      <h1>Cadastro de Funcionários</h1>
+      <form action="">
+        <div>
+          <input
+            type="text"
+            class="campos"
+            name="nome_completo"
+            placeholder="Nome Completo"
+          />
+        </div>
+        <br />
+        <div>
+          <input type="text" class="campos" name="cargo" placeholder="Cargo" />
+        </div>
+        <br />
+        <div>
+          <input
+            type="text"
+            class="campos"
+            name="salario"
+            placeholder="Salário"
+          />
+        </div>
+        <br />
+        <div>
+          <input
+            type="submit"
+            id="salvar"
+            class="botoes salvar"
+            value="Salvar"
+          />
+          <button class="botoes cancelar" onclick="limpar(event)">
+            Limpar
+          </button>
+        </div>
+      </form>
     </main>
     <footer>
-        <span>Desenvolvido por Thiago.</span>
+      <span>Desenvolvido por Thiago.</span>
     </footer>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
