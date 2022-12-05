@@ -13,7 +13,7 @@ function limpar(event){
     event.preventDefault();
     document.querySelector('form').reset();
     console.log('Limpando....');
-}
+};
 
 function salvar(event){
     event.preventDefault();
@@ -44,7 +44,7 @@ function salvar(event){
     
     localStorage.setItem('IdFuncionario', JSON.stringify(id));    
     localStorage.setItem('Funcionarios', JSON.stringify(listaFunc));
-    // limpar(event)
+    limpar(event)
 }
 
 document.getElementById('salvar').addEventListener('click', salvar)
