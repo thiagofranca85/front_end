@@ -54,9 +54,9 @@ function carregadados(){
 
     var id = parseInt =(urlParametros.get('id'));
 
-    var alunos = JSON.parse(localStorage.getItem('Funcionarios'));
+    var funcionarios = JSON.parse(localStorage.getItem('Funcionarios'));
     
-    alunos.forEach(e =>{
+    funcionarios.forEach(e =>{
         if(e['id'] == id){
             carregaCampos(e);
         }

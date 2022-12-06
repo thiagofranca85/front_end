@@ -24,8 +24,8 @@ function carregar() {
                     <td>${e["cargo"]}</td>
                     <td>${e["salario"]}</td>
                     <td>
-                    <a href="editar.html">editar</a>
-                    <button href="" onclick="deletar(${e["id"]})">Deletar</button>
+                    <a href="editar.html?id=${e["id"]}">editar</a>
+                    <button onclick="deletar(${e["id"]})">Deletar</button>
                     </td>
                 </tr>`;
 
