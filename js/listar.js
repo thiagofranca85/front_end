@@ -8,10 +8,6 @@ function carregarEditar(event, id) {
   carregarEditar(id);
 }
 
-function editar(event, id){
-    document.getElementsByName()
-}
-
 function carregar() {
   console.log("Carregando Janela");
   var tbody = document.querySelector("tbody");

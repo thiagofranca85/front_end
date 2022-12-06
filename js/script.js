@@ -34,12 +34,12 @@ function salvar(event){
     }
     id = id +1;
 
-    var Aluno = {
+    var Func = {
                     'id': id,
                     'nome_completo': name,
                     'cargo': cargo,
                     'salario': salario
-        };listaFunc.push(Aluno);
+        };listaFunc.push(Func);
 
     
     localStorage.setItem('IdFuncionario', JSON.stringify(id));    
